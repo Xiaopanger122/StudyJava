@@ -24,6 +24,7 @@ public class Application {
 
         System.out.println(manager.staff);
         //System.out.println(manager.magic);
+        manager.fart();
     }
 
 }
