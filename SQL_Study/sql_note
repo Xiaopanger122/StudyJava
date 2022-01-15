@@ -1,0 +1,38 @@
+2020-Jan-14 Work and Stud
+
+-SELECT   CustomerID id, CustomerName name, Address FROM Customers where Country in ('Canada', 'Mexico', 'UK', 'USA') and not id between 10 and 70 and name like 'S%' or name like 'T%';
+--Selec from Customers distinct Country 
+--select * from OrderDetails order by quantity desc, OrderId asc limit 10;
+--select avg(Quantity) 'My Quantity average' from OrderDetails; 
+--insert into shippers values ('18', "fanjie", '444=444==44444');
+
+--insert into shippers values ('19', "fengxiangbiao", '444=444==44444');
+
+--update shippers set ShipperName = 'rich fengxiangbiao' where ShipperName = "fengxiangbiao"
+
+
+--delete from shippers where ShipperName = 'Speedy Express';
+
+--select * from shippers
+
+--delete from shippers;
+
+select * from orders 
+
+--SELECT c.CustomerID, c.CustomerName,  c.ContactName, Orders.OrderDate FROM Customers c
+--inner join Orders on c.CustomerID = Orders.CustomerID order by c.CustomerID asc;
+
+select * from shippers;
+
+
+--SELECT c.CustomerID, c.CustomerName,  c.ContactName, Orders.OrderDate FROM Customers c
+--inner join Orders on c.CustomerID = Orders.CustomerID order by c.CustomerID asc;
+
+--select * from shippers union all select * from shippers;
+
+--insert into shippers select ShipperID + 100, ShipperName, Phone from shippers;
+
+--select * from shippers; 
+
+insert into shippers select ShipperID, ShipperName, Phone from shippers;
+
